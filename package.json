@@ -1,0 +1,30 @@
+{
+  "name": "altermail",
+  "version": "2.0.0",
+  "description": "Application de candidature alternance - AlterMail",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8",
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
+    "electron-store": "^8.1.0",
+    "uuid": "^9.0.0",
+    "pdfkit": "^0.14.0",
+    "node-notifier": "^10.0.1",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.altermail.app",
+    "productName": "AlterMail",
+    "directories": { "output": "dist" }
+  }
+}
